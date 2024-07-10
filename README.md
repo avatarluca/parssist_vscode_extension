@@ -48,6 +48,11 @@ In addition, Parssist uses [Gradle](https://gradle.org/install/) to build the pa
 Initial release of Parssist.
 Date of release: 2024-07-10
 
+### 1.0.1
+
+Bug fixes and improvements.
+Date of release: 2024-07-10
+
 ## Lexer Documentation
 ### Introduction
 The lexerfile defines the information required for lexical analysis and thus tokenization.

@@ -2,7 +2,7 @@
   "name": "parssist",
   "displayName": "parssist",
   "description": "An extension to create a parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "valenzelektron",
   "repository": {
     "type": "git",
@@ -13,7 +13,6 @@
   },
   "categories": [
     "Programming Languages",
-    "Themes",
     "Other"
   ],
   "activationEvents": [],
