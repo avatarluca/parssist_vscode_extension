@@ -53,6 +53,11 @@ Date of release: 2024-07-10
 Bug fixes and improvements.
 Date of release: 2024-07-10
 
+### 1.0.2
+
+Added logo and updated readme.
+Date of release: 2024-07-10
+
 ## Lexer Documentation
 ### Introduction
 The lexerfile defines the information required for lexical analysis and thus tokenization.
