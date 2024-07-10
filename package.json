@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/avatarluca/parssist_vscode_extension.git" 
   },
+  "icon": "logo.png",
   "engines": {
     "vscode": "^1.90.0"
   },
