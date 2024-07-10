@@ -1,0 +1,138 @@
+{
+  "name": "parssist",
+  "displayName": "parssist",
+  "description": "An extension to create a parser",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes",
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+        {
+            "id": "gra",
+            "aliases": ["Grammar", "gra"],
+            "extensions": [".gra"],
+            "configuration": "./language-configuration.json"
+        },
+        {
+            "id": "lex",
+            "aliases": ["Lexer", "lex"],
+            "extensions": [".lex"],
+            "configuration": "./language-configuration.json"
+        }
+    ],
+    "grammars": [
+        {
+            "language": "gra",
+            "scopeName": "source.gra",
+            "path": "./syntaxes/gra.tmLanguage.json"
+        },
+        {
+            "language": "lex",
+            "scopeName": "source.lex",
+            "path": "./syntaxes/lex.tmLanguage.json"
+        }
+    ],
+    "themes": [
+        {
+            "label": "Standard Parssist Theme",
+            "uiTheme": "vs-dark",
+            "path": "./themes/std_parssist_theme.json"
+        }
+    ],
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "parssist.grammarFile": {
+          "type": "string",
+          "default": "grammar.gra",
+          "description": "Parssist: The path to the grammar file"
+        },
+        "parssist.lexerFile": {
+          "type": "string",
+          "default": "lexer.lex",
+          "description": "Parssist: The path to the lexer file"
+        },
+        "parssist.name": {
+          "type": "string",
+          "default": "Parser",
+          "description": "Parssist: The parser name"
+        },
+        "parssist.moduleName": {
+          "type": "string",
+          "default": "parssist.Parser",
+          "description": "Parssist: The parser module name"
+        },
+        "parssist.language": {
+          "type": "string",
+          "default": "java",
+          "description": "Parssist: The language of the parser"
+        },
+        "parssist.algorithm": {
+          "type": "string",
+          "default": "auto",
+          "description": "Parssist: The used parser algorithm"
+        },
+        "parssist.writeLog": {
+          "type": "boolean",
+          "default": "true",
+          "description": "Parssist: If there should be an error log file"
+        }
+      }
+    },
+    "commands": [
+    {
+      "command": "parssist.generate",
+      "title": "Parssist: Generate parser"
+    }, 
+    {
+      "command": "parssist.setGrammarPath",
+      "title": "Parssist: Set grammar file path"
+    }, 
+    {
+      "command": "parssist.setLexerPath",
+      "title": "Parssist: Set lexer file path"
+    },
+    {
+      "command": "parssist.setLanguage",
+      "title": "Parssist: Set language, in which the parser gets written"
+    },
+    {
+      "command": "parssist.setParserAlgorithm",
+      "title": "Parssist: Set algorithm for the parser"
+    },
+    {
+      "command": "parssist.setParserName",
+      "title": "Parssist: Set parser name"
+    },
+    {
+      "command": "parssist.setParserModuleName",
+      "title": "Parssist: Set parser module name"
+    },
+    {
+      "command": "parssist.setErrorLog",
+      "title": "Parssist: Set if there should be an error log file"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
+}

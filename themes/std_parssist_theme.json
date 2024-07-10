@@ -1,0 +1,58 @@
+{
+    "name": "Standard Parssist Theme",
+    "type": "dark",
+    "colors": {},
+    "tokenColors": [
+        {
+            "scope": "comment.line.number-sign.gra",
+            "settings": {
+                "foreground": "#4F814F"
+            }
+        },
+        {
+            "scope": "keyword.operator.gra",
+            "settings": {
+                "foreground": "#4767AC"
+            }
+        },
+        {
+            "scope": "entity.name.type.gra",
+            "settings": {
+                "foreground": "#DFD767",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "constant.character.escape.gra",
+            "settings": {
+                "foreground": "#914542",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "comment.line.number-sign.lex",
+            "settings": {
+                "foreground": "#4F814F"
+            }
+        },
+        {
+            "scope": "keyword.operator.lex",
+            "settings": {
+                "foreground": "#4767AC"
+            }
+        },
+        {
+            "scope": "string.regexp.lex",
+            "settings": {
+                "foreground": "#C4786E"
+            }
+        },
+        {
+            "scope": "entity.name.type.lex",
+            "settings": {
+                "foreground": "#00917D",
+                "fontStyle": "bold"
+            }
+        }
+    ]
+}
